@@ -1,0 +1,817 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/net/COReS"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://purl.org/net/COReS">
+    <Prefix name="" IRI="http://example.org/unnamed#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="p1" IRI="http://example.org/file1#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="ace_lexicon" IRI="http://attempto.ifi.uzh.ch/ace_lexicon#"/>
+    <Prefix name="ContentBasedSimilarityOntology" IRI="https://w3id.org/OntoDocRel/ContentBasedSimilarityOntology#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">COReS stands for Content based Ontology for Research paper Similarity.
+This Ontology provides classifications for content based similarity
+techniques. There are two layers in the COReS.
+
+One of the layers represent a a class hierarchy for different content based similarity techniques.
+
+Second layer represents the class hierarchy of pair-wise content based similarity measures computed using techniques of first layer.
+</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Muhammd Abdul Qadir, Muhammad Tanvir Afzal</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&xsd;string">Version 1.0, created with Protege 4.3</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Qamar Mahmood</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2017-04-02</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">COReS: Content base Ontology for Research Paper Similarity</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Average_KL_divergence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bibliographic_coupling_sim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Citation_based_similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Citation_context_based_sim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Citation_count_based_sim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Citation_graph_based_sim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cocitation_analysis_sim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Content_based_similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cosine_Similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dice_Coefficient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Direct_citation_count_sim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dissimilarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distance_Based_Similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Edit_distance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Euclidean_Similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hellsinger_Similiarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hybrid_content_based_similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Information_Radius"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jaccard_Similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KL_Divergence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#L_Cosine_SImilarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Latent_Diritchel_Allocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lexical_similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manhatton_Norm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Matching_Coefficient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non_Content_based_similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Normalized_Pointwise_Mutual_Info"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Overlap_Coefficient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Average_KL_Divergence_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Bibliographic_Coupling_based_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Citation_Context_based_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Citation_Count_based_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Citation_Graph_based_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Citation_based_sim_measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Cocitation_Analysis_based_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Cosine_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Dice_Coefficient_SIm_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Direct_Citation_Count_based_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Edit_Distance_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Information_Radius_based_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Jaccard_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_L_Cosine_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Latent_Diritchel_Allocation_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Lexical_Based_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Manhatton_Norm_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Matching_Coefficient_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Normalized_PMI_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Overlapping_Coefficient_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Pearson_Correlation_Coefficient_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Pointwise_Mutual_Information_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Structural_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Tree_Edit_Distance_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_Visual_Sim_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PW_XML_based_sim_measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pearson_Correlation_Coefficient_Similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pointwise_Mutual_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Probabilistic_Similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relatedness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structural_similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tree_edit_distance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vector_Space_Based_Similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XML_based_similarity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Generates"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:PN_sg"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_pl"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_sg"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_vbg"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Average_KL_divergence"/>
+        <Class IRI="#KL_Divergence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bibliographic_coupling_sim"/>
+        <Class IRI="#Citation_count_based_sim"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citation_based_similarity"/>
+        <Class IRI="#Content_based_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citation_context_based_sim"/>
+        <Class IRI="#Citation_based_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citation_count_based_sim"/>
+        <Class IRI="#Citation_based_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citation_graph_based_sim"/>
+        <Class IRI="#Citation_based_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cocitation_analysis_sim"/>
+        <Class IRI="#Citation_count_based_sim"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Content_based_similarity"/>
+        <Class IRI="#Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cosine_Similarity"/>
+        <Class IRI="#Vector_Space_Based_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dice_Coefficient"/>
+        <Class IRI="#Vector_Space_Based_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Direct_citation_count_sim"/>
+        <Class IRI="#Citation_count_based_sim"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dissimilarity"/>
+        <Class IRI="#Relatedness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distance_Based_Similarity"/>
+        <Class IRI="#Vector_Space_Based_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edit_distance"/>
+        <Class IRI="#Lexical_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Euclidean_Similarity"/>
+        <Class IRI="#Distance_Based_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hellsinger_Similiarity"/>
+        <Class IRI="#Distance_Based_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hybrid_content_based_similarity"/>
+        <Class IRI="#Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Information_Radius"/>
+        <Class IRI="#Probabilistic_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jaccard_Similarity"/>
+        <Class IRI="#Vector_Space_Based_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KL_Divergence"/>
+        <Class IRI="#Probabilistic_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#L_Cosine_SImilarity"/>
+        <Class IRI="#Cosine_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Latent_Diritchel_Allocation"/>
+        <Class IRI="#Probabilistic_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lexical_similarity"/>
+        <Class IRI="#Content_based_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manhatton_Norm"/>
+        <Class IRI="#Probabilistic_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Matching_Coefficient"/>
+        <Class IRI="#Vector_Space_Based_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non_Content_based_similarity"/>
+        <Class IRI="#Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Normalized_Pointwise_Mutual_Info"/>
+        <Class IRI="#Pointwise_Mutual_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Overlap_Coefficient"/>
+        <Class IRI="#Vector_Space_Based_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Average_KL_Divergence_Sim_Measure"/>
+        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Bibliographic_Coupling_based_Sim_Measure"/>
+        <Class IRI="#PW_Citation_Count_based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Citation_Context_based_Sim_Measure"/>
+        <Class IRI="#PW_Citation_based_sim_measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Citation_Count_based_Sim_Measure"/>
+        <Class IRI="#PW_Citation_based_sim_measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Citation_Graph_based_Sim_Measure"/>
+        <Class IRI="#PW_Citation_based_sim_measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Citation_based_sim_measure"/>
+        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Cocitation_Analysis_based_Sim_Measure"/>
+        <Class IRI="#PW_Citation_Count_based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Cosine_Sim_Measure"/>
+        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Dice_Coefficient_SIm_Measure"/>
+        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Direct_Citation_Count_based_Sim_Measure"/>
+        <Class IRI="#PW_Citation_Count_based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Edit_Distance_Sim_Measure"/>
+        <Class IRI="#PW_Lexical_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Information_Radius_based_Sim_Measure"/>
+        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Jaccard_Sim_Measure"/>
+        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_L_Cosine_Sim_Measure"/>
+        <Class IRI="#PW_Cosine_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Latent_Diritchel_Allocation_Sim_Measure"/>
+        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Lexical_Based_Sim_Measure"/>
+        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Manhatton_Norm_Sim_Measure"/>
+        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Matching_Coefficient_Sim_Measure"/>
+        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Normalized_PMI_Sim_Measure"/>
+        <Class IRI="#PW_Pointwise_Mutual_Information_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Overlapping_Coefficient_Sim_Measure"/>
+        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Pearson_Correlation_Coefficient_Sim_Measure"/>
+        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Pointwise_Mutual_Information_Sim_Measure"/>
+        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
+        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Structural_Sim_Measure"/>
+        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Tree_Edit_Distance_Sim_Measure"/>
+        <Class IRI="#PW_Lexical_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_Visual_Sim_Measure"/>
+        <Class IRI="#PW_Structural_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PW_XML_based_sim_measure"/>
+        <Class IRI="#PW_Structural_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+        <Class IRI="#Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pearson_Correlation_Coefficient_Similarity"/>
+        <Class IRI="#Vector_Space_Based_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pointwise_Mutual_Information"/>
+        <Class IRI="#Probabilistic_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Probabilistic_Similarity"/>
+        <Class IRI="#Content_based_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relatedness"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Similarity"/>
+        <Class IRI="#Relatedness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structural_similarity"/>
+        <Class IRI="#Content_based_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tree_edit_distance"/>
+        <Class IRI="#Lexical_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vector_Space_Based_Similarity"/>
+        <Class IRI="#Content_based_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XML_based_similarity"/>
+        <Class IRI="#Structural_similarity"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Citation_based_similarity"/>
+        <Class IRI="#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Citation_based_similarity"/>
+        <Class IRI="#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Probabilistic_Similarity"/>
+        <Class IRI="#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Generates"/>
+        <Class IRI="#Content_based_similarity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Generates"/>
+        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Average_KL_divergence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A probabilistic similarity technique which is symmetric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bibliographic_coupling_sim</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents bibliographic coupling based similarity technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Citation_based_similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the similarity techniques which use citation information of research papers to compute similarity between them</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Citation_context_based_sim</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents such similarity techniques which use citation contexts in research papers to compute similarity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Citation_count_based_sim</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents citation count based similarity technique to compute relatedness between research papers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Citation_graph_based_sim</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents such similarity techniques which citation graphs of research papers to compute similarity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cocitation_analysis_sim</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents a similarity technique based on co-citation analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Content_based_similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Content_based_similarities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Content_based_similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Content_based_similarity_techniques</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Content_based_similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the concept of such similarity measures which use contents of research articles to compute relatedness between them</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cosine_Similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the cosine similarity which is computed between vectors of research documents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dice_Coefficient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A VSM technique for Binary Vectors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Direct_citation_count_sim</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents similarity technique based on direct citation count for research papers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Dissimilarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dissimilarities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Dissimilarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dissimilarity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dissimilarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the concept of dissimilarity measure which can be used to compute relatedness between researcha articles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Distance_Based_Similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Set of techniques using distance between vectors of research documents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Edit_distance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents edit distance based similarity measuring technique for finding similrity between research papers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hybrid_content_based_similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the combination of different content based similarity techniques, when used in a combined manner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Information_Radius</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A probabilistic similarity called Information Radius, providing better results than KL_Divergence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Jaccard_Similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Jaccard_Similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Another VSM technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KL_Divergence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A probabilistic similarity technique which is not symmetric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#L_Cosine_SImilarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A variation of cosine similarity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Latent_Diritchel_Allocation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A probabilistic similarity using different topic models of research papers such as ACM and DMOZ classifications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lexical_similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This technique focus on lexical (string based) contents of research papers to compute similarity between them</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Manhatton_Norm</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A probabilistic similarity measure called Manhatton Norm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Matching_Coefficient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A VSM technique for Binary Vectors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Non_Content_based_similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents such similarity techniques which use such entities which do nto use contents of research papers such as collaborative filtering, item centric measures etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Normalized_Pointwise_Mutual_Info</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A category of Pointwise Mututal Information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Overlap_Coefficient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A VSM technique for Binary Vectors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pearson_Correlation_Coefficient_Similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pearson_Correlation_Coefficient_Similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Another VSM technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pointwise_Mutual_Information</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Uses Co-occurrene based inofmration about set of terms in probability distribution lists to find similar papers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Probabilistic_Similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents a set of techniques which use probability distribution of words of research papers to find similarity between them</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Relatedness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Relatednesses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Relatedness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Relatedness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Relatedness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the relatedness measures which can be used to find relatedness between research articles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>#Similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Similarities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>#Similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Similarity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the concept of similarity measures used to compute relatedness between research articles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Structural_similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents such similarity techniques which focus on document structure of a research paper, such as XML representation of document structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tree_edit_distance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents Tree Edit distance based similarity technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vector_Space_Based_Similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A class representing thos similarity techniques which use Vector Space model of research documents to compute similarity between them</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XML_based_similarity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents such similarity techniques which specifically focus on XML based structure of a research paper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>http://purl.org/spar/fabio/Expression</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Expressions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>http://purl.org/spar/fabio/Expression</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <IRI>http://purl.org/spar/fabio/WorkshopPaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WorkshopPapers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <IRI>http://purl.org/spar/fabio/WorkshopPaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WorkshopPaper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#contains"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">Authors</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
