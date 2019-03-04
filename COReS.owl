@@ -10,23 +10,18 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://purl.org/net/COReS"
+     xml:base="http://publ.orgn/net/COReS.owl"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://purl.org/net/COReS">
-    <Prefix name="" IRI="http://example.org/unnamed#"/>
-    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
-    <Prefix name="p1" IRI="http://example.org/file1#"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+     ontologyIRI="http://publ.orgn/net/COReS.owl">
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="ace_lexicon" IRI="http://attempto.ifi.uzh.ch/ace_lexicon#"/>
-    <Prefix name="ContentBasedSimilarityOntology" IRI="https://w3id.org/OntoDocRel/ContentBasedSimilarityOntology#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">COReS stands for Content based Ontology for Research paper Similarity.
 This Ontology provides classifications for content based similarity
 techniques. There are two layers in the COReS.
@@ -37,775 +32,2505 @@ Second layer represents the class hierarchy of pair-wise content based similarit
 </Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Muhammd Abdul Qadir, Muhammad Tanvir Afzal</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal datatypeIRI="&xsd;string">Version 1.0, created with Protege 4.3</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Qamar Mahmood</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Muhammd Abdul Qadir, Muhammad Tanvir Afzal</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:date"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">2017-04-02</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Qamar Mahmood</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">COReS: Content base Ontology for Research Paper Similarity</Literal>
     </Annotation>
-    <Declaration>
-        <Class IRI="#Average_KL_divergence"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bibliographic_coupling_sim"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Citation_based_similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Citation_context_based_sim"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Citation_count_based_sim"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Citation_graph_based_sim"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cocitation_analysis_sim"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Content_based_similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cosine_Similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dice_Coefficient"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Direct_citation_count_sim"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dissimilarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distance_Based_Similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Edit_distance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Euclidean_Similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hellsinger_Similiarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hybrid_content_based_similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Information_Radius"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Jaccard_Similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#KL_Divergence"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#L_Cosine_SImilarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Latent_Diritchel_Allocation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lexical_similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Manhatton_Norm"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Matching_Coefficient"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Non_Content_based_similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Normalized_Pointwise_Mutual_Info"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Overlap_Coefficient"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Average_KL_Divergence_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Bibliographic_Coupling_based_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Citation_Context_based_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Citation_Count_based_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Citation_Graph_based_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Citation_based_sim_measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Cocitation_Analysis_based_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Cosine_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Dice_Coefficient_SIm_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Direct_Citation_Count_based_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Edit_Distance_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Information_Radius_based_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Jaccard_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_L_Cosine_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Latent_Diritchel_Allocation_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Lexical_Based_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Manhatton_Norm_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Matching_Coefficient_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Normalized_PMI_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Overlapping_Coefficient_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Pearson_Correlation_Coefficient_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Pointwise_Mutual_Information_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Structural_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Tree_Edit_Distance_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_Visual_Sim_Measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PW_XML_based_sim_measure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pearson_Correlation_Coefficient_Similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pointwise_Mutual_Information"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Probabilistic_Similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Relatedness"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structural_similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tree_edit_distance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Vector_Space_Based_Similarity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#XML_based_similarity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Generates"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:PN_sg"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_pl"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_sg"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:TV_vbg"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#Average_KL_divergence"/>
-        <Class IRI="#KL_Divergence"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Bibliographic_coupling_sim"/>
-        <Class IRI="#Citation_count_based_sim"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Citation_based_similarity"/>
-        <Class IRI="#Content_based_similarity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Citation_context_based_sim"/>
-        <Class IRI="#Citation_based_similarity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Citation_count_based_sim"/>
-        <Class IRI="#Citation_based_similarity"/>
-    </SubClassOf>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2017-04-02</Literal>
+    </Annotation>
     <SubClassOf>
-        <Class IRI="#Citation_graph_based_sim"/>
-        <Class IRI="#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#ACM_Classification"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Cocitation_analysis_sim"/>
-        <Class IRI="#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Abstract"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Content_based_similarity"/>
-        <Class IRI="#Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Affiliations"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Cosine_Similarity"/>
-        <Class IRI="#Vector_Space_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#All_contents"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Dice_Coefficient"/>
-        <Class IRI="#Vector_Space_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Authors"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Direct_citation_count_sim"/>
-        <Class IRI="#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Dissimilarity"/>
-        <Class IRI="#Relatedness"/>
+        <Class IRI="http://purl.org/net/COReS#Bag_of_words"/>
+        <Class IRI="http://purl.org/net/COReS#Term_word_sets"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Distance_Based_Similarity"/>
-        <Class IRI="#Vector_Space_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Edit_distance"/>
-        <Class IRI="#Lexical_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Body_Text"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Euclidean_Similarity"/>
-        <Class IRI="#Distance_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#CC_IDF"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Hellsinger_Similiarity"/>
-        <Class IRI="#Distance_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_Context"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Hybrid_content_based_similarity"/>
-        <Class IRI="#Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_Count"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Information_Radius"/>
-        <Class IRI="#Probabilistic_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_Graph"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Jaccard_Similarity"/>
-        <Class IRI="#Vector_Space_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_Tags"/>
+        <Class IRI="http://purl.org/net/COReS#Term_word_sets"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#KL_Divergence"/>
-        <Class IRI="#Probabilistic_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#L_Cosine_SImilarity"/>
-        <Class IRI="#Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Latent_Diritchel_Allocation"/>
-        <Class IRI="#Probabilistic_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Lexical_similarity"/>
-        <Class IRI="#Content_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Manhatton_Norm"/>
-        <Class IRI="#Probabilistic_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Cluster_of_Research_Papers"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Matching_Coefficient"/>
-        <Class IRI="#Vector_Space_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Co_Word_Analysis"/>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Non_Content_based_similarity"/>
-        <Class IRI="#Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Normalized_Pointwise_Mutual_Info"/>
-        <Class IRI="#Pointwise_Mutual_Information"/>
+        <Class IRI="http://purl.org/net/COReS#Concept_Topic_Model_Tag"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Overlap_Coefficient"/>
-        <Class IRI="#Vector_Space_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Conclusion"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Average_KL_Divergence_Sim_Measure"/>
-        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Bibliographic_Coupling_based_Sim_Measure"/>
-        <Class IRI="#PW_Citation_Count_based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Citation_Context_based_Sim_Measure"/>
-        <Class IRI="#PW_Citation_based_sim_measure"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Citation_Count_based_Sim_Measure"/>
-        <Class IRI="#PW_Citation_based_sim_measure"/>
+        <Class IRI="http://purl.org/net/COReS#DMOZ_Category"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Citation_Graph_based_Sim_Measure"/>
-        <Class IRI="#PW_Citation_based_sim_measure"/>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Citation_based_sim_measure"/>
-        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Cocitation_Analysis_based_Sim_Measure"/>
-        <Class IRI="#PW_Citation_Count_based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Dissimilarity"/>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Cosine_Sim_Measure"/>
-        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Dice_Coefficient_SIm_Measure"/>
-        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Edit_distance"/>
+        <Class IRI="http://purl.org/net/COReS#Lexical_similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Direct_Citation_Count_based_Sim_Measure"/>
-        <Class IRI="#PW_Citation_Count_based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
+        <Class IRI="http://purl.org/net/COReS#Parameters_of_relatedness"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Edit_Distance_Sim_Measure"/>
-        <Class IRI="#PW_Lexical_Based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Information_Radius_based_Sim_Measure"/>
-        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Exact_Matching_Scheme"/>
+        <Class IRI="http://purl.org/net/COReS#Lexical_similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Jaccard_Sim_Measure"/>
-        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Expanded_Text"/>
+        <Class IRI="http://purl.org/net/COReS#Text_Representation_for_contents"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_L_Cosine_Sim_Measure"/>
-        <Class IRI="#PW_Cosine_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Foreword"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Latent_Diritchel_Allocation_Sim_Measure"/>
-        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Lexical_Based_Sim_Measure"/>
-        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+        <Class IRI="http://purl.org/net/COReS#Hybrid_content_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Manhatton_Norm_Sim_Measure"/>
-        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Matching_Coefficient_Sim_Measure"/>
-        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Normalized_PMI_Sim_Measure"/>
-        <Class IRI="#PW_Pointwise_Mutual_Information_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Introduction"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Overlapping_Coefficient_Sim_Measure"/>
-        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Inverse_Document_Frequency"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Pearson_Correlation_Coefficient_Sim_Measure"/>
-        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Pointwise_Mutual_Information_Sim_Measure"/>
-        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Probabilistic_Sim_Measure"/>
-        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Structural_Sim_Measure"/>
-        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+        <Class IRI="http://purl.org/net/COReS#Keyowrds"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Tree_Edit_Distance_Sim_Measure"/>
-        <Class IRI="#PW_Lexical_Based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Vector_Space_Based_Sim_Measure"/>
-        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_Visual_Sim_Measure"/>
-        <Class IRI="#PW_Structural_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Lexical_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PW_XML_based_sim_measure"/>
-        <Class IRI="#PW_Structural_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
-        <Class IRI="#Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Pearson_Correlation_Coefficient_Similarity"/>
-        <Class IRI="#Vector_Space_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Named_Entitites"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Pointwise_Mutual_Information"/>
-        <Class IRI="#Probabilistic_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Probabilistic_Similarity"/>
-        <Class IRI="#Content_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Relatedness"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Average_KL_Divergence_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Probabilistic_Sim_Measure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Similarity"/>
-        <Class IRI="#Relatedness"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Bibliographic_Coupling_based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Citation_Count_based_Sim_Measure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Structural_similarity"/>
-        <Class IRI="#Content_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Citation_Context_based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Citation_based_sim_measure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Tree_edit_distance"/>
-        <Class IRI="#Lexical_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Citation_Count_based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Citation_based_sim_measure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Vector_Space_Based_Similarity"/>
-        <Class IRI="#Content_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Citation_Graph_based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Citation_based_sim_measure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#XML_based_similarity"/>
-        <Class IRI="#Structural_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Citation_based_sim_measure"/>
+        <Class IRI="http://purl.org/net/COReS#Pair-wise_content_based_similarity_measures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Cocitation_Analysis_based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Citation_Count_based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Cosine_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Vector_Space_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Dice_Coefficient_SIm_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Vector_Space_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Direct_Citation_Count_based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Citation_Count_based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Edit_Distance_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Lexical_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Information_Radius_based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Probabilistic_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Jaccard_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Vector_Space_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_L_Cosine_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Cosine_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Latent_Diritchel_Allocation_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Probabilistic_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Lexical_Based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Pair-wise_content_based_similarity_measures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Manhatton_Norm_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Probabilistic_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Matching_Coefficient_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Vector_Space_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Normalized_PMI_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Pointwise_Mutual_Information_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Overlapping_Coefficient_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Vector_Space_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Pearson_Correlation_Coefficient_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Vector_Space_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Pointwise_Mutual_Information_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Probabilistic_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Probabilistic_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Pair-wise_content_based_similarity_measures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Structural_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Pair-wise_content_based_similarity_measures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Tree_Edit_Distance_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Lexical_Based_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Vector_Space_Based_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#Pair-wise_content_based_similarity_measures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_Visual_Sim_Measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Structural_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#PW_XML_based_sim_measure"/>
+        <Class IRI="http://purl.org/net/COReS#PW_Structural_Sim_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Pair-wise_content_based_similarity_measures"/>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Phrase_Depth"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Probability_Distribution_Of_Terms"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Pseudo_Document"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Recency_of_Research_Paper"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#References"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Related_work"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper"/>
+        <Class IRI="http://purl.org/net/COReS#Parameters_of_relatedness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
+        <Class IRI="http://purl.org/net/COReS#Parameters_of_relatedness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Self_Citation_Link"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Set_Of_Phrases"/>
+        <Class IRI="http://purl.org/net/COReS#Term_word_sets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Set_of_terms"/>
+        <Class IRI="http://purl.org/net/COReS#Term_word_sets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Social_Habits"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Social_Tag"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Stemmed_Text"/>
+        <Class IRI="http://purl.org/net/COReS#Text_Representation_for_contents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Structural_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Subject_Action_Object_Structure"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Suffix_Tree_Document_Model"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Surface_Text"/>
+        <Class IRI="http://purl.org/net/COReS#Text_Representation_for_contents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Synonyms_Of_Terms"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#TF_IDF"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Term_Frequency"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Term_Weight"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Term_position"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Term_word_sets"/>
+        <Class IRI="http://purl.org/net/COReS#Parameters_of_relatedness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Text_Representation_for_contents"/>
+        <Class IRI="http://purl.org/net/COReS#Parameters_of_relatedness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Title"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Topic_Graph"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Topic_Model"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Tree_Representation_of_Concepts"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Tree_edit_distance"/>
+        <Class IRI="http://purl.org/net/COReS#Lexical_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#User_Graph"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Venue"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
+        <Class IRI="http://purl.org/net/COReS#Parameters_of_relatedness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#Writing_Style"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#XML_Tags"/>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#XML_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Structural_similarity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/net/COReS#n_grams"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#Citation_based_similarity"/>
-        <Class IRI="#Probabilistic_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Citation_based_similarity"/>
-        <Class IRI="#Vector_Space_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Probabilistic_Similarity"/>
-        <Class IRI="#Vector_Space_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Average_KL_divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_context_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Citation_graph_based_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Dice_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Direct_citation_count_sim"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Distance_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Euclidean_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Hellsinger_Similiarity"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Inclusion_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Information_Radius"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Index"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#KL_Divergence"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#L_Cosine_SImilarity"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Latent_Diritchel_Allocation"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Manhatton_Norm"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Matching_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Overlap_Coefficient"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Pointwise_Mutual_Information"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Beel,_Langer,_Genzmehr,_&amp;_Nürnberger,_2013)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Beel,_Langer,_Genzmehr,_&amp;_Nürnberger,_2013)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Beel,_Langer,_Genzmehr,_&amp;_Nürnberger,_2013)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Beel,_Langer,_Genzmehr,_&amp;_Nürnberger,_2013)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Beel,_Langer,_Genzmehr,_&amp;_Nürnberger,_2013)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Bethard_&amp;_Jurafsky,_2010)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Bethard_&amp;_Jurafsky,_2010)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Bethard_&amp;_Jurafsky,_2010)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Bethard_&amp;_Jurafsky,_2010)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Bethard_&amp;_Jurafsky,_2010)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Chandrasekaran,_Susan,_Praveen,_&amp;_Hiep,_2008)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Lexical_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Chandrasekaran,_Susan,_Praveen,_&amp;_Hiep,_2008)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Chandrasekaran,_Susan,_Praveen,_&amp;_Hiep,_2008)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Chandrasekaran,_Susan,_Praveen,_&amp;_Hiep,_2008)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Tree_edit_distance"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Chandrasekaran,_Susan,_Praveen,_&amp;_Hiep,_2008)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Entities_Outside_the_Research_Paper"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Chim_&amp;_Deng,_2007)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Parameters_of_relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Chim_&amp;_Deng,_2007)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Suffix_Tree_Document_Model"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Chim_&amp;_Deng,_2007)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Ferrara,_Pudota,_&amp;_Tasso,_2011)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Ferrara,_Pudota,_&amp;_Tasso,_2011)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Ferrara,_Pudota,_&amp;_Tasso,_2011)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Ferrara,_Pudota,_&amp;_Tasso,_2011)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Ferrara,_Pudota,_&amp;_Tasso,_2011)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Giles,_Bollacker,_&amp;_Lawrence,_1998)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Giles,_Bollacker,_&amp;_Lawrence,_1998)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Giles,_Bollacker,_&amp;_Lawrence,_1998)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Giles,_Bollacker,_&amp;_Lawrence,_1998)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Giles,_Bollacker,_&amp;_Lawrence,_1998)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Huang,_2008)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Huang,_2008)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Huang,_2008)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Huang,_2008)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Huang,_2008)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Jiang,_Jia,_Feng,_&amp;_Zhao,_2012)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Jiang,_Jia,_Feng,_&amp;_Zhao,_2012)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Jiang,_Jia,_Feng,_&amp;_Zhao,_2012)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Jiang,_Jia,_Feng,_&amp;_Zhao,_2012)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Jiang,_Jia,_Feng,_&amp;_Zhao,_2012)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Jyoti,_Dhawan,_&amp;_Singh,_2015)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Jyoti,_Dhawan,_&amp;_Singh,_2015)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Jyoti,_Dhawan,_&amp;_Singh,_2015)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Jyoti,_Dhawan,_&amp;_Singh,_2015)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Jyoti,_Dhawan,_&amp;_Singh,_2015)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Kohail_&amp;_Biemann,_2017)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Kohail_&amp;_Biemann,_2017)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Kohail_&amp;_Biemann,_2017)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Kohail_&amp;_Biemann,_2017)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Kohail_&amp;_Biemann,_2017)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Manning_&amp;_Schütze,_1999)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Manning_&amp;_Schütze,_1999)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Manning_&amp;_Schütze,_1999)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Manning_&amp;_Schütze,_1999)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Manning_&amp;_Schütze,_1999)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Manning_&amp;_Schütze,_1999)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Nascimento,_Alberto,_Altigran,_&amp;_Marcos,_2011)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Nascimento,_Alberto,_Altigran,_&amp;_Marcos,_2011)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Nascimento,_Alberto,_Altigran,_&amp;_Marcos,_2011)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Nascimento,_Alberto,_Altigran,_&amp;_Marcos,_2011)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Nascimento,_Alberto,_Altigran,_&amp;_Marcos,_2011)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Ozono,_Goto,_Fujimaki,_&amp;_Shintani,_2002)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Exact_Matching_Scheme"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Ozono,_Goto,_Fujimaki,_&amp;_Shintani,_2002)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Lexical_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Ozono,_Goto,_Fujimaki,_&amp;_Shintani,_2002)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Ozono,_Goto,_Fujimaki,_&amp;_Shintani,_2002)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Ozono,_Goto,_Fujimaki,_&amp;_Shintani,_2002)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Bibliographic_coupling_sim"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(STERNITZKE_&amp;_BERGMANN,_2009)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Citation_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(STERNITZKE_&amp;_BERGMANN,_2009)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Citation_count_based_sim"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(STERNITZKE_&amp;_BERGMANN,_2009)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cocitation_analysis_sim"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(STERNITZKE_&amp;_BERGMANN,_2009)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(STERNITZKE_&amp;_BERGMANN,_2009)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(STERNITZKE_&amp;_BERGMANN,_2009)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(STERNITZKE_&amp;_BERGMANN,_2009)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Sidorov,_Gelbukh,_Gomez-Adorno,_&amp;_Pinto,_2014)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Sidorov,_Gelbukh,_Gomez-Adorno,_&amp;_Pinto,_2014)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Sidorov,_Gelbukh,_Gomez-Adorno,_&amp;_Pinto,_2014)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Sidorov,_Gelbukh,_Gomez-Adorno,_&amp;_Pinto,_2014)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Soft_Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Sidorov,_Gelbukh,_Gomez-Adorno,_&amp;_Pinto,_2014)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Sidorov,_Gelbukh,_Gomez-Adorno,_&amp;_Pinto,_2014)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Sugiyama_&amp;_Kan,_2010)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Sugiyama_&amp;_Kan,_2010)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Sugiyama_&amp;_Kan,_2010)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Sugiyama_&amp;_Kan,_2010)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Sugiyama_&amp;_Kan,_2010)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Xiaoyu_&amp;_Zeng,_2012)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Probabilistic_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Xiaoyu_&amp;_Zeng,_2012)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Xiaoyu_&amp;_Zeng,_2012)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Xiaoyu_&amp;_Zeng,_2012)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Topic_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#(Xiaoyu_&amp;_Zeng,_2012)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#Cosine_Similarity_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Cosine_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#Cosine_Similarity_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#Cosine_Similarity_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#Cosine_Similarity_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#Cosine_Similarity_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#Jaccard_Similarity_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Jaccard_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#Jaccard_Similarity_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Relatedness"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#Jaccard_Similarity_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#Jaccard_Similarity_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/COReS#Vector_Space_Based_Similarity"/>
+        <NamedIndividual IRI="http://purl.org/net/COReS#Jaccard_Similarity_Algorithm"/>
+    </ClassAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Contains"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Extracted_From"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Generates"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Represented_As"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Used_In"/>
+    </EquivalentObjectProperties>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Generates"/>
-        <Class IRI="#Content_based_similarity"/>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Contains"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Extracted_From"/>
+        <Class IRI="http://purl.org/net/COReS#Term_word_sets"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Generates"/>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Represented_As"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Used_In"/>
+        <Class IRI="http://purl.org/net/COReS#Weighting_schemes"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#Generates"/>
-        <Class IRI="#Pair-wise_content_based_similarity_measures"/>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Contains"/>
+        <Class IRI="http://purl.org/net/COReS#Research_Paper_Contents"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Extracted_From"/>
+        <Class IRI="http://purl.org/net/COReS#Text_Representation_for_contents"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Generates"/>
+        <Class IRI="http://purl.org/net/COReS#Pair-wise_content_based_similarity_measures"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Represented_As"/>
+        <Class IRI="http://purl.org/net/COReS#Text_Representation_for_contents"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/net/COReS#Used_In"/>
+        <Class IRI="http://purl.org/net/COReS#Content_based_similarity"/>
+    </ObjectPropertyRange>
+    <EquivalentDataProperties>
+        <DataProperty IRI="http://purl.org/net/COReS#Destination_Paper_ID"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="http://purl.org/net/COReS#Source_Paper_ID"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="http://purl.org/net/COReS#Weighted_Sum_Parameter"/>
+    </EquivalentDataProperties>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/net/COReS#Destination_Paper_ID"/>
+        <Class IRI="http://purl.org/net/COReS#Pair-wise_content_based_similarity_measures"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/net/COReS#Source_Paper_ID"/>
+        <Class IRI="http://purl.org/net/COReS#Pair-wise_content_based_similarity_measures"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://purl.org/net/COReS#Weighted_Sum_Parameter"/>
+        <Class IRI="http://purl.org/net/COReS#Pair-wise_content_based_similarity_measures"/>
+    </DataPropertyDomain>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Average_KL_divergence</IRI>
+        <IRI>http://purl.org/net/COReS#Average_KL_divergence</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A probabilistic similarity technique which is symmetric</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Bibliographic_coupling_sim</IRI>
+        <IRI>http://purl.org/net/COReS#Bibliographic_coupling_sim</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents bibliographic coupling based similarity technique</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Citation_based_similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Citation_based_similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the similarity techniques which use citation information of research papers to compute similarity between them</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Citation_context_based_sim</IRI>
+        <IRI>http://purl.org/net/COReS#Citation_context_based_sim</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents such similarity techniques which use citation contexts in research papers to compute similarity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Citation_count_based_sim</IRI>
+        <IRI>http://purl.org/net/COReS#Citation_count_based_sim</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents citation count based similarity technique to compute relatedness between research papers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Citation_graph_based_sim</IRI>
+        <IRI>http://purl.org/net/COReS#Citation_graph_based_sim</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents such similarity techniques which citation graphs of research papers to compute similarity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Cocitation_analysis_sim</IRI>
+        <IRI>http://purl.org/net/COReS#Cocitation_analysis_sim</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents a similarity technique based on co-citation analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
-        <IRI>#Content_based_similarity</IRI>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://purl.org/net/COReS#Content_based_similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Content_based_similarities</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
-        <IRI>#Content_based_similarity</IRI>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://purl.org/net/COReS#Content_based_similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Content_based_similarity_techniques</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Content_based_similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Content_based_similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the concept of such similarity measures which use contents of research articles to compute relatedness between them</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Cosine_Similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Cosine_Similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the cosine similarity which is computed between vectors of research documents</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Dice_Coefficient</IRI>
+        <IRI>http://purl.org/net/COReS#Destination_Paper_ID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ID of destination research paper for which a similarity measure is required to be computed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/COReS#Dice_Coefficient</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A VSM technique for Binary Vectors</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Direct_citation_count_sim</IRI>
+        <IRI>http://purl.org/net/COReS#Direct_citation_count_sim</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents similarity technique based on direct citation count for research papers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
-        <IRI>#Dissimilarity</IRI>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://purl.org/net/COReS#Dissimilarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Dissimilarities</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
-        <IRI>#Dissimilarity</IRI>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://purl.org/net/COReS#Dissimilarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Dissimilarity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Dissimilarity</IRI>
+        <IRI>http://purl.org/net/COReS#Dissimilarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the concept of dissimilarity measure which can be used to compute relatedness between researcha articles</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Distance_Based_Similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Distance_Based_Similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Set of techniques using distance between vectors of research documents</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Edit_distance</IRI>
+        <IRI>http://purl.org/net/COReS#Edit_distance</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents edit distance based similarity measuring technique for finding similrity between research papers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Hybrid_content_based_similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Entities_Outside_the_Research_Paper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The entites whicha re not part of contents of research paper, but are used to compute different research paper similarity measures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/COReS#Hybrid_content_based_similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the combination of different content based similarity techniques, when used in a combined manner</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Information_Radius</IRI>
+        <IRI>http://purl.org/net/COReS#Information_Radius</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A probabilistic similarity called Information Radius, providing better results than KL_Divergence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Jaccard_Similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Jaccard_Similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Jaccard_Similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Jaccard_Similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Another VSM technique</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#KL_Divergence</IRI>
+        <IRI>http://purl.org/net/COReS#KL_Divergence</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A probabilistic similarity technique which is not symmetric</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#L_Cosine_SImilarity</IRI>
+        <IRI>http://purl.org/net/COReS#L_Cosine_SImilarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A variation of cosine similarity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Latent_Diritchel_Allocation</IRI>
+        <IRI>http://purl.org/net/COReS#Latent_Diritchel_Allocation</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A probabilistic similarity using different topic models of research papers such as ACM and DMOZ classifications</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Lexical_similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Lexical_similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This technique focus on lexical (string based) contents of research papers to compute similarity between them</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Manhatton_Norm</IRI>
+        <IRI>http://purl.org/net/COReS#Manhatton_Norm</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A probabilistic similarity measure called Manhatton Norm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Matching_Coefficient</IRI>
+        <IRI>http://purl.org/net/COReS#Matching_Coefficient</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A VSM technique for Binary Vectors</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Non_Content_based_similarity</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This class represents such similarity techniques which use such entities which do nto use contents of research papers such as collaborative filtering, item centric measures etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Normalized_Pointwise_Mutual_Info</IRI>
+        <IRI>http://purl.org/net/COReS#Normalized_Pointwise_Mutual_Info</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A category of Pointwise Mututal Information</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Overlap_Coefficient</IRI>
+        <IRI>http://purl.org/net/COReS#Overlap_Coefficient</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A VSM technique for Binary Vectors</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Pearson_Correlation_Coefficient_Similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Parameters_of_relatedness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">These are parameters of research papers used in different similarity methods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Pearson_Correlation_Coefficient_Similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Pearson_Correlation_Coefficient_Similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Another VSM technique</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Pointwise_Mutual_Information</IRI>
+        <IRI>http://purl.org/net/COReS#Pointwise_Mutual_Information</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Uses Co-occurrene based inofmration about set of terms in probability distribution lists to find similar papers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Probabilistic_Similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Probabilistic_Similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents a set of techniques which use probability distribution of words of research papers to find similarity between them</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
-        <IRI>#Relatedness</IRI>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://purl.org/net/COReS#Relatedness</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Relatednesses</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
-        <IRI>#Relatedness</IRI>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://purl.org/net/COReS#Relatedness</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Relatedness</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Relatedness</IRI>
+        <IRI>http://purl.org/net/COReS#Relatedness</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the relatedness measures which can be used to find relatedness between research articles</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
-        <IRI>#Similarity</IRI>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/COReS#Research_Paper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A scientific document for which similarity measures are required to be computed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/COReS#Research_Paper_Contents</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> These are contents in different sections of research papers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://purl.org/net/COReS#Similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Similarities</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
-        <IRI>#Similarity</IRI>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://purl.org/net/COReS#Similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Similarity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents the concept of similarity measures used to compute relatedness between research articles</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Structural_similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Source_Paper_ID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ID of source research paper from a dataset for which a similarity is computed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/COReS#Structural_similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents such similarity techniques which focus on document structure of a research paper, such as XML representation of document structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Tree_edit_distance</IRI>
+        <IRI>http://purl.org/net/COReS#Term_word_sets</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">These are sets of terms, keywords, citation tags, and bag of words extracted from different text representation schemes of research papers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/COReS#Text_Representation_for_contents</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">These are different text reprsentation schemes for text of different sections of research papers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/COReS#Tree_edit_distance</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents Tree Edit distance based similarity technique</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Vector_Space_Based_Similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Vector_Space_Based_Similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A class representing thos similarity techniques which use Vector Space model of research documents to compute similarity between them</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#XML_based_similarity</IRI>
+        <IRI>http://purl.org/net/COReS#Weighted_Sum_Parameter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A parameter representing a numeric value which is used in computation of a comprehensive similarity using weighted sum approach</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/COReS#Weighting_schemes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Weighting schemes from research papers are actually used in different content based similarity methods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/COReS#XML_based_similarity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This class represents such similarity techniques which specifically focus on XML based structure of a research paper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>http://purl.org/spar/fabio/Expression</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Expressions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>http://purl.org/spar/fabio/Expression</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Expression</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_pl"/>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>http://purl.org/spar/fabio/WorkshopPaper</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">WorkshopPapers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="ace_lexicon:CN_sg"/>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>http://purl.org/spar/fabio/WorkshopPaper</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">WorkshopPaper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#contains"/>
+        <AnnotationProperty IRI="http://purl.org/net/COReS#contains"/>
         <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
         <Literal datatypeIRI="&xsd;string">Authors</Literal>
     </AnnotationAssertion>
